@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171108 15:39:14.471" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/Aorarale/Desktop/Test/TestWebDevice.robot" id="s1" name="TestWebDevice">
+<test id="s1-t1" name="Test_01_Login_Valid_UserName_&amp;_Password">
+<kw name="Open Website">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${DFLDevice_URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:14.614" level="INFO">Opening browser 'chrome' to base url 'https://azay-dfl.firebaseapp.com/login'</msg>
+<status status="PASS" endtime="20171108 15:39:17.917" starttime="20171108 15:39:14.613"></status>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20171108 15:39:18.049" starttime="20171108 15:39:17.917"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:18.051" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:18.051" starttime="20171108 15:39:18.050"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:18.554" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:18.554" starttime="20171108 15:39:18.051"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:18.554" starttime="20171108 15:39:18.051"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:18.554" starttime="20171108 15:39:18.049"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:18.554" starttime="20171108 15:39:14.613"></status>
+</kw>
+<kw name="Input Valid Username">
+<kw name="Username Text">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_username_locator}</arg>
+<arg>${input_login_username}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:18.556" level="INFO">Typing text 'test' into text field '//*[@id="input_login_user"]'</msg>
+<status status="PASS" endtime="20171108 15:39:18.657" starttime="20171108 15:39:18.555"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:18.657" starttime="20171108 15:39:18.555"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:18.658" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:18.658" starttime="20171108 15:39:18.658"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:19.159" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:19.160" starttime="20171108 15:39:18.659"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:19.160" starttime="20171108 15:39:18.658"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:19.160" starttime="20171108 15:39:18.657"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:19.160" starttime="20171108 15:39:18.555"></status>
+</kw>
+<kw name="Input Valid Password">
+<kw name="Password Text">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_password_locator}</arg>
+<arg>${input_login_password}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:19.162" level="INFO">Typing text 'test' into text field '//*[@id="input_login_password"]'</msg>
+<status status="PASS" endtime="20171108 15:39:19.244" starttime="20171108 15:39:19.162"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:19.244" starttime="20171108 15:39:19.161"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:19.245" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:19.245" starttime="20171108 15:39:19.244"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:19.746" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:19.746" starttime="20171108 15:39:19.245"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:19.746" starttime="20171108 15:39:19.245"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:19.746" starttime="20171108 15:39:19.244"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:19.746" starttime="20171108 15:39:19.160"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${submit_login_locator}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:19.747" level="INFO">Clicking element '//*[@id="btn_login"]'.</msg>
+<status status="PASS" endtime="20171108 15:39:19.814" starttime="20171108 15:39:19.747"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:19.815" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:19.815" starttime="20171108 15:39:19.814"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:20.316" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:20.316" starttime="20171108 15:39:19.815"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:20.317" starttime="20171108 15:39:19.815"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:20.317" starttime="20171108 15:39:19.814"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:20.317" starttime="20171108 15:39:19.746"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Test Service Login Production</arg>
+</arguments>
+<status status="PASS" endtime="20171108 15:39:20.366" starttime="20171108 15:39:20.317"></status>
+</kw>
+<kw name="Set Timeout 15s">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:20.367" level="INFO">${timeout} = 15s</msg>
+<status status="PASS" endtime="20171108 15:39:20.367" starttime="20171108 15:39:20.366"></status>
+</kw>
+<kw name="Set Timesleep 2s">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:21.368" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20171108 15:39:21.368" starttime="20171108 15:39:20.367"></status>
+</kw>
+<timeout value="15 seconds"></timeout>
+<status status="PASS" endtime="20171108 15:39:21.368" starttime="20171108 15:39:20.367"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:21.368" starttime="20171108 15:39:20.366"></status>
+</kw>
+<kw name="Click Logout">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${submit_logout_locator}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:21.369" level="INFO">Clicking element '//*[@id="btn_tab_logged"]'.</msg>
+<status status="PASS" endtime="20171108 15:39:21.439" starttime="20171108 15:39:21.369"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:21.440" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:21.440" starttime="20171108 15:39:21.440"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:21.942" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:21.942" starttime="20171108 15:39:21.441"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:21.942" starttime="20171108 15:39:21.441"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:21.942" starttime="20171108 15:39:21.440"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:21.943" starttime="20171108 15:39:21.369"></status>
+</kw>
+<kw name="Set Timeout 15s">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:21.944" level="INFO">${timeout} = 15s</msg>
+<status status="PASS" endtime="20171108 15:39:21.944" starttime="20171108 15:39:21.943"></status>
+</kw>
+<kw name="Set Timesleep 2s">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:22.946" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20171108 15:39:22.946" starttime="20171108 15:39:21.944"></status>
+</kw>
+<timeout value="15 seconds"></timeout>
+<status status="PASS" endtime="20171108 15:39:22.946" starttime="20171108 15:39:21.944"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:22.947" starttime="20171108 15:39:21.943"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171108 15:39:23.011" starttime="20171108 15:39:22.947"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:23.011" critical="yes" starttime="20171108 15:39:14.612"></status>
+</test>
+<test id="s1-t2" name="Test_02_Login_InValid_UserName">
+<kw name="Open Website">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${DFLDevice_URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:23.014" level="INFO">Opening browser 'chrome' to base url 'https://azay-dfl.firebaseapp.com/login'</msg>
+<status status="PASS" endtime="20171108 15:39:26.222" starttime="20171108 15:39:23.014"></status>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20171108 15:39:26.355" starttime="20171108 15:39:26.223"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:26.357" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:26.357" starttime="20171108 15:39:26.356"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:26.858" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:26.859" starttime="20171108 15:39:26.357"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:26.859" starttime="20171108 15:39:26.357"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:26.859" starttime="20171108 15:39:26.355"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:26.859" starttime="20171108 15:39:23.014"></status>
+</kw>
+<kw name="Input InValid Username">
+<kw name="Username Text">
+<arguments>
+<arg>${username_1}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_username_locator}</arg>
+<arg>${input_login_username}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:26.860" level="INFO">Typing text 'test1' into text field '//*[@id="input_login_user"]'</msg>
+<status status="PASS" endtime="20171108 15:39:26.972" starttime="20171108 15:39:26.860"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:26.972" starttime="20171108 15:39:26.860"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:26.973" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:26.973" starttime="20171108 15:39:26.973"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:27.475" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:27.475" starttime="20171108 15:39:26.974"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:27.475" starttime="20171108 15:39:26.973"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:27.475" starttime="20171108 15:39:26.973"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:27.475" starttime="20171108 15:39:26.859"></status>
+</kw>
+<kw name="Input Valid Password">
+<kw name="Password Text">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_password_locator}</arg>
+<arg>${input_login_password}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:27.477" level="INFO">Typing text 'test' into text field '//*[@id="input_login_password"]'</msg>
+<status status="PASS" endtime="20171108 15:39:27.561" starttime="20171108 15:39:27.476"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:27.561" starttime="20171108 15:39:27.476"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:27.562" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:27.562" starttime="20171108 15:39:27.561"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:28.064" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:28.064" starttime="20171108 15:39:27.562"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:28.064" starttime="20171108 15:39:27.562"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:28.065" starttime="20171108 15:39:27.561"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:28.065" starttime="20171108 15:39:27.475"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${submit_login_locator}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:28.066" level="INFO">Clicking element '//*[@id="btn_login"]'.</msg>
+<status status="PASS" endtime="20171108 15:39:28.131" starttime="20171108 15:39:28.066"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:28.132" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:28.132" starttime="20171108 15:39:28.132"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:28.633" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:28.633" starttime="20171108 15:39:28.133"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:28.634" starttime="20171108 15:39:28.132"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:28.634" starttime="20171108 15:39:28.131"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:28.634" starttime="20171108 15:39:28.065"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Username or password is incorrect</arg>
+</arguments>
+<status status="PASS" endtime="20171108 15:39:28.653" starttime="20171108 15:39:28.634"></status>
+</kw>
+<kw name="Set Timeout 10s">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:28.654" level="INFO">${timeout} = 10s</msg>
+<status status="PASS" endtime="20171108 15:39:28.654" starttime="20171108 15:39:28.654"></status>
+</kw>
+<kw name="Set Timesleep 2s">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:29.656" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20171108 15:39:29.656" starttime="20171108 15:39:28.655"></status>
+</kw>
+<timeout value="10 seconds"></timeout>
+<status status="PASS" endtime="20171108 15:39:29.657" starttime="20171108 15:39:28.655"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:29.657" starttime="20171108 15:39:28.653"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171108 15:39:29.721" starttime="20171108 15:39:29.657"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:29.721" critical="yes" starttime="20171108 15:39:23.013"></status>
+</test>
+<test id="s1-t3" name="Test_03_Login_InValid_Password">
+<kw name="Open Website">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${DFLDevice_URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:29.723" level="INFO">Opening browser 'chrome' to base url 'https://azay-dfl.firebaseapp.com/login'</msg>
+<status status="PASS" endtime="20171108 15:39:33.082" starttime="20171108 15:39:29.723"></status>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20171108 15:39:33.214" starttime="20171108 15:39:33.082"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:33.215" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:33.215" starttime="20171108 15:39:33.214"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:33.718" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:33.718" starttime="20171108 15:39:33.216"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:33.718" starttime="20171108 15:39:33.215"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:33.718" starttime="20171108 15:39:33.214"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:33.718" starttime="20171108 15:39:29.722"></status>
+</kw>
+<kw name="Input Valid Username">
+<kw name="Username Text">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_username_locator}</arg>
+<arg>${input_login_username}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:33.719" level="INFO">Typing text 'test' into text field '//*[@id="input_login_user"]'</msg>
+<status status="PASS" endtime="20171108 15:39:33.818" starttime="20171108 15:39:33.719"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:33.818" starttime="20171108 15:39:33.719"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:33.820" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:33.820" starttime="20171108 15:39:33.819"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:34.321" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:34.321" starttime="20171108 15:39:33.820"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:34.321" starttime="20171108 15:39:33.820"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:34.321" starttime="20171108 15:39:33.819"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:34.321" starttime="20171108 15:39:33.718"></status>
+</kw>
+<kw name="Input InValid Password">
+<kw name="Password Text">
+<arguments>
+<arg>${password_1}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_password_locator}</arg>
+<arg>${input_login_password}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:34.323" level="INFO">Typing text 'test1' into text field '//*[@id="input_login_password"]'</msg>
+<status status="PASS" endtime="20171108 15:39:34.407" starttime="20171108 15:39:34.323"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:34.407" starttime="20171108 15:39:34.322"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:34.408" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:34.408" starttime="20171108 15:39:34.408"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:34.910" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:34.910" starttime="20171108 15:39:34.409"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:34.910" starttime="20171108 15:39:34.408"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:34.911" starttime="20171108 15:39:34.407"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:34.911" starttime="20171108 15:39:34.322"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${submit_login_locator}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:34.912" level="INFO">Clicking element '//*[@id="btn_login"]'.</msg>
+<status status="PASS" endtime="20171108 15:39:34.980" starttime="20171108 15:39:34.911"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:34.981" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:34.981" starttime="20171108 15:39:34.981"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:35.483" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:35.483" starttime="20171108 15:39:34.982"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:35.483" starttime="20171108 15:39:34.981"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:35.483" starttime="20171108 15:39:34.980"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:35.483" starttime="20171108 15:39:34.911"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Username or password is incorrect</arg>
+</arguments>
+<status status="PASS" endtime="20171108 15:39:35.501" starttime="20171108 15:39:35.483"></status>
+</kw>
+<kw name="Set Timeout 10s">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:35.502" level="INFO">${timeout} = 10s</msg>
+<status status="PASS" endtime="20171108 15:39:35.502" starttime="20171108 15:39:35.502"></status>
+</kw>
+<kw name="Set Timesleep 2s">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:36.504" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20171108 15:39:36.504" starttime="20171108 15:39:35.503"></status>
+</kw>
+<timeout value="10 seconds"></timeout>
+<status status="PASS" endtime="20171108 15:39:36.504" starttime="20171108 15:39:35.502"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:36.504" starttime="20171108 15:39:35.501"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171108 15:39:36.569" starttime="20171108 15:39:36.504"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:36.570" critical="yes" starttime="20171108 15:39:29.722"></status>
+</test>
+<test id="s1-t4" name="Test_04_Login_InValid_Username_&amp;_Password">
+<kw name="Open Website">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${DFLDevice_URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:36.571" level="INFO">Opening browser 'chrome' to base url 'https://azay-dfl.firebaseapp.com/login'</msg>
+<status status="PASS" endtime="20171108 15:39:39.856" starttime="20171108 15:39:36.571"></status>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20171108 15:39:39.986" starttime="20171108 15:39:39.856"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:39.988" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:39.988" starttime="20171108 15:39:39.987"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:40.490" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:40.490" starttime="20171108 15:39:39.989"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:40.490" starttime="20171108 15:39:39.988"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:40.490" starttime="20171108 15:39:39.987"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:40.490" starttime="20171108 15:39:36.571"></status>
+</kw>
+<kw name="Input InValid Username">
+<kw name="Username Text">
+<arguments>
+<arg>${username_1}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_username_locator}</arg>
+<arg>${input_login_username}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:40.492" level="INFO">Typing text 'test1' into text field '//*[@id="input_login_user"]'</msg>
+<status status="PASS" endtime="20171108 15:39:40.595" starttime="20171108 15:39:40.492"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:40.595" starttime="20171108 15:39:40.491"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:40.596" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:40.596" starttime="20171108 15:39:40.596"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:41.097" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:41.097" starttime="20171108 15:39:40.597"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:41.098" starttime="20171108 15:39:40.596"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:41.098" starttime="20171108 15:39:40.595"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:41.098" starttime="20171108 15:39:40.491"></status>
+</kw>
+<kw name="Input InValid Password">
+<kw name="Password Text">
+<arguments>
+<arg>${password_1}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_password_locator}</arg>
+<arg>${input_login_password}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:41.099" level="INFO">Typing text 'test1' into text field '//*[@id="input_login_password"]'</msg>
+<status status="PASS" endtime="20171108 15:39:41.184" starttime="20171108 15:39:41.099"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:41.184" starttime="20171108 15:39:41.099"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:41.185" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:41.185" starttime="20171108 15:39:41.185"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:41.687" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:41.687" starttime="20171108 15:39:41.186"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:41.687" starttime="20171108 15:39:41.185"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:41.687" starttime="20171108 15:39:41.184"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:41.688" starttime="20171108 15:39:41.098"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${submit_login_locator}</arg>
+</arguments>
+<msg timestamp="20171108 15:39:41.689" level="INFO">Clicking element '//*[@id="btn_login"]'.</msg>
+<status status="PASS" endtime="20171108 15:39:41.756" starttime="20171108 15:39:41.688"></status>
+</kw>
+<kw name="Set Timeout">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:41.757" level="INFO">${timeout} = 1s</msg>
+<status status="PASS" endtime="20171108 15:39:41.757" starttime="20171108 15:39:41.756"></status>
+</kw>
+<kw name="Set Timesleep">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:42.258" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171108 15:39:42.258" starttime="20171108 15:39:41.757"></status>
+</kw>
+<timeout value="1 second"></timeout>
+<status status="PASS" endtime="20171108 15:39:42.259" starttime="20171108 15:39:41.757"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:42.259" starttime="20171108 15:39:41.756"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:42.259" starttime="20171108 15:39:41.688"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Username or password is incorrect</arg>
+</arguments>
+<status status="PASS" endtime="20171108 15:39:42.277" starttime="20171108 15:39:42.259"></status>
+</kw>
+<kw name="Set Timeout 10s">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${timeout}</arg>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:42.278" level="INFO">${timeout} = 10s</msg>
+<status status="PASS" endtime="20171108 15:39:42.278" starttime="20171108 15:39:42.278"></status>
+</kw>
+<kw name="Set Timesleep 2s">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20171108 15:39:43.280" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20171108 15:39:43.280" starttime="20171108 15:39:42.279"></status>
+</kw>
+<timeout value="10 seconds"></timeout>
+<status status="PASS" endtime="20171108 15:39:43.280" starttime="20171108 15:39:42.278"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:43.280" starttime="20171108 15:39:42.277"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171108 15:39:43.345" starttime="20171108 15:39:43.280"></status>
+</kw>
+<status status="PASS" endtime="20171108 15:39:43.346" critical="yes" starttime="20171108 15:39:36.570"></status>
+</test>
+<status status="PASS" endtime="20171108 15:39:43.347" starttime="20171108 15:39:14.473"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestWebDevice" pass="4">TestWebDevice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
